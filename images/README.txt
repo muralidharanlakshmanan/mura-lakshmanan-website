@@ -53,8 +53,9 @@ ceo-award-plaque.jpg             Photo of the award plaque
 ceo-award-email.jpg              Award notification email
 cais-2026-certificate.jpg        Certificate of presentation, once issued
 icieee-2026-keynote-certificate.jpg Certificate of Appreciation
-consulting-healthcare.jpg        Optional: recognition or certificate from the healthcare engagements
-consulting-ups.jpg               Optional: recognition or reference from the UPS engagement
+consulting-synchrony.jpg         Illustrative graphic — not engagement-specific evidence
+consulting-ups.jpg               Illustrative diagram — not UPS-specific evidence
+consulting-healthcare.jpg        Illustrative diagram — not engagement-specific evidence
 cis-2026.jpg                     Photo, keynote announcement or speaker profile
 zee-news.png                     Screenshot of the Zee News article
 collide-2026.jpg                 Panel announcement graphic
