@@ -18,12 +18,16 @@ a:hover{color:var(--signal)}
 .site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
 .site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:4.25rem}
 .mark{font-family:var(--display);font-weight:800;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
-.tabs{display:flex;gap:.1rem;overflow-x:auto;scrollbar-width:none;font-family:var(--display);font-size:.85rem;flex-shrink:0}
+.tabs{display:flex;gap:.1rem;overflow-x:auto;scrollbar-width:none;font-family:var(--display);font-size:.85rem;min-width:0}
 .tabs::-webkit-scrollbar{display:none}
 .tabs a{text-decoration:none;color:var(--muted);padding:.5rem .55rem;border-radius:4px;white-space:nowrap}
 .tabs a:hover{color:var(--ink);background:var(--wash)}
 .tabs a[aria-current="page"]{color:var(--paper);background:var(--ink)}
-.menu-btn{display:none;font:600 .95rem var(--display);background:none;border:1.5px solid var(--ink);color:var(--ink);border-radius:4px;padding:.4rem .8rem;cursor:pointer}
+.menu-btn{display:none;font:600 .95rem var(--display);background:none;border:1.5px solid var(--ink);color:var(--ink);border-radius:4px;padding:.4rem .8rem;cursor:pointer;flex-shrink:0}
+.site-head.compact .tabs{display:none}
+.site-head.compact .menu-btn{display:block}
+.site-head.compact.open .tabs{display:flex;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--rule);padding:.5rem clamp(1.25rem,4vw,2.5rem) 1rem}
+.site-head.compact.open .tabs a{padding:.7rem .75rem}
 
 .page-head{padding:clamp(2.5rem,7vw,5rem) 0 clamp(1.5rem,4vw,2.5rem);border-bottom:2px solid var(--ink)}
 .page-head h1{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,7vw,5rem);line-height:.98;letter-spacing:-.035em;margin:0;max-width:14ch}
@@ -91,7 +95,7 @@ h3{font-family:var(--display);font-weight:600;font-size:1.2rem;margin:0 0 .35rem
 .links{display:flex;flex-wrap:wrap;gap:.75rem 2rem;font-family:var(--display);font-size:1.1rem}
 footer{font-family:var(--display);font-size:.85rem;color:var(--muted);padding:2rem 0}
 
-@media (max-width:1280px){
+@media (max-width:640px){
   .menu-btn{display:block}
   .tabs{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--rule);padding:.5rem clamp(1.25rem,4vw,2.5rem) 1rem}
   .site-head.open .tabs{display:flex}

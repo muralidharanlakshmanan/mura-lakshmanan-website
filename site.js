@@ -10,6 +10,20 @@ window.addEventListener('load',()=>window.__carousels());
 (function(){const h=document.querySelector('.site-head'),b=document.querySelector('.menu-btn');if(!b)return;
 b.addEventListener('click',()=>{const o=h.classList.toggle('open');b.setAttribute('aria-expanded',o)});})();
 
+(function(){
+  var head=document.querySelector('.site-head'), tabs=document.querySelector('.tabs');
+  if(!head||!tabs) return;
+  function check(){
+    if(window.innerWidth<=640) return; // small-screen CSS breakpoint already forces the menu here
+    var overflowing = tabs.scrollWidth > tabs.clientWidth + 1;
+    if(!overflowing) head.classList.remove('open');
+    head.classList.toggle('compact', overflowing);
+  }
+  window.addEventListener('resize', check);
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(check); }
+  check();
+})();
+
 (function(){const ps=[...document.querySelectorAll('.ph')];let left=ps.length;const done=()=>{if(--left<=0&&window.__carousels)window.__carousels();};
 ps.forEach(f=>{const i=f.querySelector('img');const bad=()=>{f.classList.add('empty');};
  if(!i||!i.getAttribute('src')){bad();return done();}
