@@ -15,11 +15,19 @@ b.addEventListener('click',()=>{const o=h.classList.toggle('open');b.setAttribut
   if(!head||!tabs) return;
   function check(){
     if(window.innerWidth<=640) return; // small-screen CSS breakpoint already forces the menu here
+    // Measure with the full tab bar showing: while .compact is on the tabs are display:none and
+    // measure 0 wide, which used to flip the menu back off on every other check.
+    var wasOpen = head.classList.contains('open');
+    head.classList.remove('compact','open');
     var overflowing = tabs.scrollWidth > tabs.clientWidth + 1;
-    if(!overflowing) head.classList.remove('open');
     head.classList.toggle('compact', overflowing);
+    if(overflowing && wasOpen) head.classList.add('open');
   }
   window.addEventListener('resize', check);
+  // Also re-check when the header's own width changes without a window resize
+  // (e.g. a vertical scrollbar appearing once the page grows taller, common on Windows).
+  if(window.ResizeObserver){ var lastW=0; new ResizeObserver(function(){ var w=head.clientWidth; if(w!==lastW){ lastW=w; check(); } }).observe(head); }
+  window.addEventListener('load', check);
   if(document.fonts && document.fonts.ready){ document.fonts.ready.then(check); }
   check();
 })();

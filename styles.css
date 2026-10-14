@@ -16,7 +16,7 @@ a:hover{color:var(--signal)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
 
 .site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
-.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:4.25rem}
+.site-head .wrap{max-width:1200px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:4.25rem}
 .mark{font-family:var(--display);font-weight:800;text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
 .tabs{display:flex;gap:.1rem;overflow-x:auto;scrollbar-width:none;font-family:var(--display);font-size:.85rem;min-width:0}
 .tabs::-webkit-scrollbar{display:none}
@@ -123,6 +123,7 @@ footer{font-family:var(--display);font-size:.85rem;color:var(--muted);padding:2r
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1.75rem}
 .cards.three{grid-template-columns:repeat(3,minmax(0,1fr))}
 .card h3{margin-top:.9rem}
+.card .ev{margin-right:1.1rem}
 .card p{margin:.25rem 0 0;font-size:1rem}
 .card .meta{font-family:var(--display);font-size:.9rem;color:var(--muted);margin-top:.1rem}
 .ph{margin:0;aspect-ratio:4/3;background:var(--wash);border-radius:4px;overflow:hidden;position:relative}

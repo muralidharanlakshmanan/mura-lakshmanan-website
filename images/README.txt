@@ -2,7 +2,8 @@ Put photos in this folder using exactly these file names. JPG or PNG is fine, bu
 Any photo you don't add is hidden automatically once DRAFT_MODE is false.
 
 portrait.jpg                     Professional headshot, portrait orientation
-cais-2026.jpg                    Session photo, presenter slide or certificate
+cais-2026-certificate.jpg        Certificate of appreciation, oral presentation
+cais-2026.jpg                    Conference logo
 ijca-paper.png                   Journal logo
 ijca-article.png                 Article page screenshot
 ecpdc-2026.jpg                   Title slide
@@ -32,11 +33,12 @@ tpc-icst-2026.jpg                ICST 2026 · IIT Patna, India · 1–2 Aug 2026
 tpc-icdscnc-2026.jpg             ICDSCNC 2026 · Sri Krishna Institute of Technology, Bengaluru · 28–29 Aug 2026 — Reviewer
 tpc-sasigd-2026.jpg              SASIGD 2026 · CBIT, Hyderabad · 13–14 Aug 2026 — Reviewer
 tpc-aikiie-2026.jpg              AIKIIE-2026 · RYMEC, Ballari · 7–8 Aug 2026 — Reviewer
+tpc-iemcon-2026.jpg              IEEE IEMCON 2026 · UC Berkeley, USA · 30 Sept–2 Oct 2026 — TPC Member and Reviewer
+tpc-icsit-2026.jpg               ICSIT 2026 · Symbiosis Institute of Technology, Nagpur · 26–27 Sept 2026 — Reviewer
+tpc-iec2t-2026.jpg               IEC2T-26 · AKGEC Ghaziabad, IEEE U.P. Section · 9–10 Sept 2026 — Reviewer
+tpc-isemantic-2026.jpg           iSemantic 2026 · Semarang, Indonesia · 18–20 Sept 2026 — Reviewer
+tpc-temsmet-2026.jpg             IEEE TEMSMET-2026 · Symbiosis International, Hyderabad · 29–31 Oct 2026 — Reviewer
 tpc-icaii.jpg                    IEEE ICAII · Beijing, China — Reviewer — certificate pending
-tpc-temsmet.jpg                  IEEE TEMSMET · Hyderabad, India — Reviewer — certificate pending
-tpc-isemantic.jpg                iSemantic · Universitas Dian Nuswantoro, Semarang, Indonesia — Reviewer — certificate pending
-tpc-iec2t.jpg                    IEC2T · Ghaziabad, Uttar Pradesh, India — Reviewer — certificate pending
-tpc-icsit.jpg                    ICSIT · Symbiosis Institute of Technology, Nagpur, India — Reviewer — certificate pending
 tpc-icedge.jpg                   ICEdge · Bengaluru, India — Reviewer — certificate pending
 tpc-autocom.jpg                  AUTOCOM · Graphic Era Hill University, Dehradun, India — Reviewer — certificate pending
 tpc-jcser.jpg                    JCSER (Journal of Computer Science and Engineering Research) · Academic Edge Press, Manchester, UK — Peer Reviewer — certificate pending
@@ -44,21 +46,26 @@ tpc-neurips-judge.jpg            NeurIPS 2026 Workshop on Trustworthy LLM Evalua
 ut-austin-certificate.jpg        Program completion certificate
 icieee-2026.jpg                  Speaker announcement graphic
 icieee-2026-slide.jpg            Talk title slide
-hackathon-2026.jpg               Certificate, or a photo with no internal screens, badges or project names visible
+hackathon-2026.jpg               Recognition received 12 October 2026 for first-round judging
+ksu-career-compass-2026.jpg      Certificate of appreciation, featured speaker and judge
 writing-mentoring.svg            Illustration — articles feeding the team's reference practice
 ieee-senior-member.jpg           Certificate of IEEE Membership
 sas-sefm.jpg                     Certificate of Membership
-iete-fellowship.jpg              Certificate or announcement page
+iete-fellowship.jpg              Certificate of election as Fellow
+globee-judge-2026.jpg            Certificate of appreciation, volunteer judge
 ceo-award-plaque.jpg             Photo of the award plaque
 ceo-award-email.jpg              Award notification email
-cais-2026-certificate.jpg        Certificate of presentation, once issued
 icieee-2026-keynote-certificate.jpg Certificate of Appreciation
 consulting-synchrony.jpg         Illustrative graphic — not engagement-specific evidence
 consulting-ups.jpg               Illustrative diagram — not UPS-specific evidence
 consulting-healthcare.jpg        Illustrative diagram — not engagement-specific evidence
-cis-2026.jpg                     Photo, keynote announcement or speaker profile
-zee-news.png                     Screenshot of the Zee News article
+collide-2026-speaking.jpg        On stage, COLLIDE 2026
+collide-2026-stage.jpg           Panel on stage, with the session screen
+collide-2026-panel.jpg           Full panel
+collide-2026-panel-wide.jpg      Panel, wide view
 collide-2026.jpg                 Panel announcement graphic
+cis-2026.jpg                     Conference venue, NIT Warangal
+zee-news.png                     Zee News coverage
 dzone-article.png                Screenshot of the DZone article header
 finextra-article.png             Screenshot of the Finextra article header
 devto-series.png                 Screenshot of the series index
