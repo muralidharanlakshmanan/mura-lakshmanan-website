@@ -46,6 +46,9 @@ tpc-neurips-judge.jpg            NeurIPS 2026 Workshop on Trustworthy LLM Evalua
 ut-austin-certificate.jpg        Program completion certificate
 icieee-2026.jpg                  Speaker announcement graphic
 icieee-2026-slide.jpg            Talk title slide
+collide-2026-keyur-vyas-linkedin.jpg Fellow panelist's LinkedIn post
+collide-2026-speaking.jpg        On stage, COLLIDE 2026
+collide-2026-stage.jpg           Panel on stage, with the session screen
 hackathon-2026.jpg               Recognition received 12 October 2026 for first-round judging
 ksu-career-compass-2026.jpg      Certificate of appreciation, featured speaker and judge
 writing-mentoring.svg            Illustration — articles feeding the team's reference practice
@@ -59,13 +62,12 @@ icieee-2026-keynote-certificate.jpg Certificate of Appreciation
 consulting-synchrony.jpg         Illustrative graphic — not engagement-specific evidence
 consulting-ups.jpg               Illustrative diagram — not UPS-specific evidence
 consulting-healthcare.jpg        Illustrative diagram — not engagement-specific evidence
-collide-2026-speaking.jpg        On stage, COLLIDE 2026
-collide-2026-stage.jpg           Panel on stage, with the session screen
 collide-2026-panel.jpg           Full panel
 collide-2026-panel-wide.jpg      Panel, wide view
 collide-2026.jpg                 Panel announcement graphic
 cis-2026.jpg                     Conference venue, NIT Warangal
 zee-news.png                     Zee News coverage
+authority-magazine-interview.jpg Portrait
 dzone-article.png                Screenshot of the DZone article header
 finextra-article.png             Screenshot of the Finextra article header
 devto-series.png                 Screenshot of the series index
