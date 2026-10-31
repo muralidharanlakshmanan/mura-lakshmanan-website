@@ -68,7 +68,7 @@ collide-2026.jpg                 Panel announcement graphic
 cis-2026.jpg                     Conference venue, NIT Warangal
 zee-news.png                     Zee News coverage
 authority-magazine-interview.jpg Portrait
-dzone-article.png                Screenshot of the DZone article header
 finextra-article.png             Screenshot of the Finextra article header
+thep-tan-linkedin.png            Screenshot of Thep Tan's LinkedIn post
+dzone-article.png                Screenshot of the DZone article header
 devto-series.png                 Screenshot of the series index
-thep-tan-linkedin.png            Screenshot of Thep Tan's LinkedIn post (save it now)
