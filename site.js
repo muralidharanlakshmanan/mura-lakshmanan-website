@@ -114,3 +114,61 @@ if(!ps.length&&window.__carousels)window.__carousels();})();
   size();window.addEventListener('resize',size);window.__flow2Resize=size;setMode('after');
   if(!rm.matches)requestAnimationFrame(frame);
 })();
+
+(function(){
+  var root=document.documentElement;
+  var secs=[].slice.call(document.querySelectorAll('main section'));
+  if(secs.length){
+    root.classList.add('js-focus');
+    var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+    if(!rm&&'IntersectionObserver' in window){
+      root.classList.add('js-reveal');
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+      secs.forEach(function(s){io.observe(s);});
+    }
+    // Focus candidates: each row in sections built from rows, otherwise the whole section.
+    var UNIT='.papers > li',cands=[];
+    secs.forEach(function(sec){
+      var us=[].slice.call(sec.querySelectorAll(UNIT));
+      if(!us.length){cands.push({el:sec,sec:sec,unit:false});return;}
+      sec.classList.add('has-units');
+      us.forEach(function(u,k){cands.push({el:u,sec:sec,unit:true,first:k===0,last:k===us.length-1});});
+    });
+    var tick=false;
+    function pick(){
+      tick=false;
+      var h=window.innerHeight,line=h*0.42,best=null,bd=1e9;
+      secs.forEach(function(sec){
+        if(!sec.getClientRects().length)return;
+        var r=sec.getBoundingClientRect();
+        if(r.bottom>0&&r.top<h)sec.classList.add('in');
+      });
+      cands.forEach(function(c){
+        if(!c.el.getClientRects().length)return;
+        var r=c.el.getBoundingClientRect(),top=r.top,bottom=r.bottom;
+        if(c.unit){var sr=c.sec.getBoundingClientRect();if(c.first)top=sr.top;if(c.last)bottom=sr.bottom;}
+        if(bottom<=0||top>=h)return;
+        var d=(top<=line&&bottom>=line)?0:Math.min(Math.abs(top-line),Math.abs(bottom-line));
+        if(d<bd){bd=d;best=c;}
+      });
+      secs.forEach(function(sec){sec.classList.toggle('active',!!best&&best.sec===sec);});
+      cands.forEach(function(c){if(c.unit)c.el.classList.toggle('u-active',c===best);});
+    }
+    function req(){if(!tick){tick=true;requestAnimationFrame(pick);}}
+    addEventListener('scroll',req,{passive:true});
+    addEventListener('resize',req);
+    addEventListener('hashchange',function(){setTimeout(pick,80);});
+    addEventListener('load',pick);
+    pick();
+  }
+  // expandable panels: "show all" buttons, and open everything for print
+  [].forEach.call(document.querySelectorAll('.p-all'),function(b){
+    var scope=b.closest('section')||document;
+    function panels(){return [].slice.call(scope.querySelectorAll('details.panel'));}
+    function sync(){var all=panels().every(function(d){return d.open;});b.textContent=all?'Collapse all':'Show all details';b.setAttribute('aria-expanded',all?'true':'false');}
+    b.addEventListener('click',function(){var ps=panels(),all=ps.every(function(d){return d.open;});ps.forEach(function(d){d.open=!all;});sync();});
+    panels().forEach(function(d){d.addEventListener('toggle',sync);});
+    sync();
+  });
+  addEventListener('beforeprint',function(){[].forEach.call(document.querySelectorAll('details.panel'),function(d){d.open=true;});});
+})();

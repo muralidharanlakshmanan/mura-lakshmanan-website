@@ -212,3 +212,85 @@ html:not(.draft) .carousel.none{display:none}
 .f2-stats span{font-size:.88rem;color:var(--muted)}
 #f2-note{margin:1rem 0 0;font-size:1rem;max-width:44rem}
 @media (max-width:600px){.flow2 canvas{height:190px}.f2-stats b{font-size:1.2rem}}
+
+/* Also responsible for (Invention and Innovation) */
+.resp{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:1.25rem 3.5rem;border-top:2px solid var(--ink);padding-top:1.5rem;margin-top:1.75rem}
+.resp h3,.resp-pair h3{font-size:1.2rem;margin:0 0 .6rem}
+.svc li.more{color:var(--muted);font-style:italic}
+.resp .fine{margin-top:-.25rem}
+.resp h3{grid-column:1/-1}
+.resp p,.resp-pair p{max-width:none;margin:0 0 1rem}
+.resp .lbl{font-family:var(--display);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 .6rem}
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.svc li{padding:.55rem 0;border-bottom:1px solid var(--rule);font-size:1rem}
+.figs{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 3.5rem;background:var(--wash);padding:1.5rem 1.75rem;border-radius:4px;margin-top:.5rem}
+.figs strong{display:block;font-family:var(--display);font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:600;letter-spacing:-.02em;line-height:1}
+.figs span{display:block;color:var(--muted);font-size:.95rem;margin-top:.45rem;line-height:1.4}
+.figs .fine{grid-column:1/-1;margin:.25rem 0 0}
+.resp-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 3.5rem;margin-top:2.75rem}
+.resp-pair > div{border-top:2px solid var(--ink);padding-top:1.5rem}
+.resp-pair p:last-child{margin-bottom:0}
+@media (max-width:760px){.resp,.resp-pair,.figs{grid-template-columns:1fr}.resp-pair{gap:2.25rem}}
+
+/* Accent (16 Nov 2026): Mura did not want blue. Copper is the default; the preview has a swatch picker. */
+:root{--signal:#b4532a}
+/* Heading hierarchy: section titles clearly above sub-headings */
+main section{position:relative;isolation:isolate}
+main section > h2,main section.group h2{font-weight:700;letter-spacing:-.02em;position:relative;padding-top:1.15rem}
+main section > h2{font-size:clamp(1.8rem,2.9vw,2.2rem);line-height:1.1}
+main section.group h2{font-size:clamp(1.45rem,2.1vw,1.65rem)}
+main section > h2::before,main section.group h2::before{content:"";position:absolute;left:0;top:0;width:2.5rem;height:4px;background:var(--ink);transition:width .45s ease,background-color .45s ease}
+main section.active > h2::before,main section.group.active h2::before{width:5.5rem;background:var(--signal)}
+main section h3{font-size:1.2rem}
+main section .paper h3{font-size:1.25rem}
+/* Scroll focus: the section being read lifts off the page as a sheet */
+.js-focus main section{border-top-color:transparent;transition:opacity .5s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.js-focus main section::after{content:"";position:absolute;z-index:-1;top:clamp(.9rem,2.2vw,1.6rem);bottom:clamp(.9rem,2.2vw,1.6rem);left:calc(-1 * clamp(.8rem,2.6vw,2rem));right:calc(-1 * clamp(.8rem,2.6vw,2rem));background:var(--paper);border:1px solid var(--rule);border-radius:14px;box-shadow:0 30px 70px -34px rgba(0,0,0,.45),0 3px 10px -4px rgba(0,0,0,.08);opacity:0;transform:scale(.975);transition:opacity .5s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.js-focus main section.active::after{opacity:1;transform:none}
+.js-focus main section.active{transform:translateY(-4px)}
+@media (hover:hover) and (min-width:821px){
+.js-focus main section{opacity:.62}
+.js-focus main section.active,.js-focus main section:hover,.js-focus main section:focus-within{opacity:1}
+}
+/* Item-level focus: in sections made of rows, the rows lift one at a time instead of the whole section */
+.js-focus main section.has-units::after{display:none}
+.js-focus main section.has-units.active{transform:none}
+.js-focus main section .papers > li{position:relative;isolation:isolate;transition:opacity .45s ease,transform .5s cubic-bezier(.2,.7,.2,1),border-color .3s ease}
+.js-focus main section .papers > li::after{content:"";position:absolute;z-index:-1;top:.65rem;bottom:.65rem;left:calc(-1 * clamp(.8rem,2.2vw,1.6rem));right:calc(-1 * clamp(.8rem,2.2vw,1.6rem));background:var(--paper);border:1px solid var(--rule);border-radius:12px;box-shadow:0 26px 60px -30px rgba(0,0,0,.45),0 3px 10px -4px rgba(0,0,0,.08);opacity:0;transform:scale(.98);transition:opacity .45s ease,transform .5s cubic-bezier(.2,.7,.2,1)}
+.js-focus main section .papers > li:last-child::after{bottom:-1.6rem}
+.js-focus main section .papers > li.u-active::after{opacity:1;transform:none}
+.js-focus main section .papers > li.u-active{transform:translateY(-3px);border-bottom-color:transparent}
+.js-focus main section .papers > li:has(+ li.u-active){border-bottom-color:transparent}
+@media (hover:hover) and (min-width:821px){
+.js-focus main section.has-units.active .papers > li{opacity:.55}
+.js-focus main section.has-units.active .papers > li.u-active,.js-focus main section.has-units.active .papers > li:hover,.js-focus main section.has-units.active .papers > li:focus-within{opacity:1}
+}
+.js-reveal main section:not(.in){opacity:0;transform:translateY(22px)}
+@media (prefers-reduced-motion:reduce){.js-focus main section,.js-focus main section::after,main section h2::before,.js-focus main section .papers > li,.js-focus main section .papers > li::after{transition:none}.js-focus main section.active,.js-focus main section .papers > li.u-active{transform:none}}
+@media print{.js-focus main section,.js-reveal main section:not(.in),.js-focus main section .papers > li{opacity:1!important;transform:none!important}.js-focus main section::after,.js-focus main section .papers > li::after{display:none}}
+/* Click-to-expand panels */
+.p-bar{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin:0 0 1.25rem}
+.p-bar p{margin:0}
+.p-all{font:inherit;font-family:var(--display);font-size:.85rem;background:none;border:1px solid var(--ink);border-radius:999px;padding:.4rem .95rem;cursor:pointer;color:var(--ink);transition:background-color .2s,color .2s}
+.p-all:hover{background:var(--ink);color:var(--paper)}
+.panel{border-top:2px solid var(--ink)}
+.panel:last-of-type{border-bottom:2px solid var(--ink)}
+.panel > summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,21rem) minmax(0,1fr) 2.25rem;gap:.35rem 2rem;align-items:center;padding:1.35rem 0}
+.panel > summary::-webkit-details-marker{display:none}
+.panel > summary h3{margin:0;font-size:1.3rem;transition:color .2s}
+.panel > summary .p-sum{color:var(--muted);font-size:1rem;line-height:1.45}
+.panel > summary .p-ico{justify-self:end;width:2.25rem;height:2.25rem;border:1px solid var(--ink);border-radius:50%;position:relative;transition:transform .35s ease,background-color .2s,border-color .2s}
+.panel > summary .p-ico::before,.panel > summary .p-ico::after{content:"";position:absolute;left:50%;top:50%;width:.8rem;height:2px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .35s ease,background-color .2s}
+.panel > summary .p-ico::after{transform:translate(-50%,-50%) rotate(90deg)}
+.panel[open] > summary .p-ico::after{transform:translate(-50%,-50%) rotate(0)}
+.panel > summary:hover h3,.panel[open] > summary h3{color:var(--signal)}
+.panel > summary:hover .p-ico{background:var(--signal);border-color:var(--signal)}
+.panel > summary:hover .p-ico::before,.panel > summary:hover .p-ico::after{background:var(--paper)}
+.panel > .p-body{padding:.25rem 0 2rem}
+.panel[open] > .p-body{animation:p-open .45s cubic-bezier(.2,.7,.2,1)}
+@keyframes p-open{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+.panel .p-body > p{max-width:44rem;margin:0}
+.panel .resp{border-top:0;padding-top:0;margin-top:0}
+.panel .resp h3{display:none}
+@media (max-width:760px){.panel > summary{grid-template-columns:minmax(0,1fr) 2.25rem}.panel > summary .p-sum{grid-column:1/-1;grid-row:2}}
+@media (prefers-reduced-motion:reduce){.panel[open] > .p-body{animation:none}}
