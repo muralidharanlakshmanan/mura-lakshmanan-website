@@ -294,3 +294,24 @@ main section .paper h3{font-size:1.25rem}
 .panel .resp h3{display:none}
 @media (max-width:760px){.panel > summary{grid-template-columns:minmax(0,1fr) 2.25rem}.panel > summary .p-sum{grid-column:1/-1;grid-row:2}}
 @media (prefers-reduced-motion:reduce){.panel[open] > .p-body{animation:none}}
+/* Carousel (16 Nov 2026): chevron buttons over the photo, pill dots, slide-and-fade, animated height, swipe */
+.cstage{position:relative;overflow:hidden;border-radius:6px;transition:height .5s cubic-bezier(.2,.7,.2,1)}
+.carousel .ph.on{animation:c-in .55s cubic-bezier(.2,.7,.2,1)}
+.carousel[data-dir="prev"] .ph.on{animation-name:c-in-l}
+@keyframes c-in{from{opacity:0;transform:translateX(32px)}to{opacity:1;transform:none}}
+@keyframes c-in-l{from{opacity:0;transform:translateX(-32px)}to{opacity:1;transform:none}}
+.cbtn{position:absolute;top:50%;z-index:2;width:2.6rem;height:2.6rem;padding:0;border-radius:50%;border:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 8px 22px -8px rgba(0,0,0,.45);color:var(--ink);cursor:pointer;display:grid;place-items:center;transform:translateY(-50%);transition:transform .25s cubic-bezier(.2,.7,.2,1),background-color .2s ease,color .2s ease,box-shadow .2s ease}
+.cbtn.prev{left:.65rem}
+.cbtn.next{right:.65rem}
+.cbtn svg{width:1.1rem;height:1.1rem;display:block}
+.cbtn:hover{background:var(--ink);color:var(--paper);transform:translateY(-50%) scale(1.08);box-shadow:0 10px 26px -8px rgba(0,0,0,.55)}
+.cbtn:active{transform:translateY(-50%) scale(.94)}
+.carousel.single .cbtn{display:none}
+.cnav{flex-direction:column;align-items:center;justify-content:flex-start;gap:.55rem;margin-top:.85rem}
+.cnav .cdots{display:flex;gap:.4rem;align-items:center;justify-content:center;flex-wrap:wrap}
+.cnav .cdots button{width:.5rem;height:.5rem;padding:0;border:0;border-radius:999px;background:#c9c9c9;cursor:pointer;transition:width .35s cubic-bezier(.2,.7,.2,1),background-color .3s ease}
+.cnav .cdots button:hover{background:var(--muted);color:inherit}
+.cnav .cdots button[aria-current="true"]{width:1.6rem;background:var(--ink)}
+.cnav .cap{flex:none;padding:0;line-height:1.4}
+@media (prefers-reduced-motion:reduce){.carousel .ph.on{animation:none}.cstage,.cbtn,.cnav .cdots button{transition:none}}
+@media print{.cbtn,.cnav .cdots{display:none}}

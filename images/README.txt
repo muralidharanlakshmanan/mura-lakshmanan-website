@@ -44,14 +44,21 @@ tpc-autocom.jpg                  AUTOCOM · Graphic Era Hill University, Dehradu
 tpc-jcser.jpg                    JCSER (Journal of Computer Science and Engineering Research) · Academic Edge Press, Manchester, UK — Peer Reviewer — certificate pending
 tpc-neurips-judge.jpg            NeurIPS 2026 Workshop on Trustworthy LLM Evaluation (JUDGe) · Atlanta, USA — Reviewer — certificate pending
 ut-austin-certificate.jpg        Program completion certificate
+hackathon-2026.jpg               Recognition received 12 October 2026 for first-round judging
+aspire-coach-journey.jpg         Participant's presentation, coaching journey
+aspire-coach-takeaways.jpg       Participant's presentation, takeaways
+aspire-coach-recognition.jpg     Recognition from the program's leadership team
+ksu-career-compass-2026-workshop.jpg Workshop title graphic
+ksu-career-compass-2026.jpg      Certificate of appreciation, featured speaker and judge
+adplist-rising-star-2026.jpg     Certificate of Recognition, Rising Star
+adplist-review-1.jpg             Mentor review on ADPList
+adplist-review-2.jpg             Mentor review on ADPList
+writing-mentoring.svg            Illustration — articles feeding the team's reference practice
 icieee-2026.jpg                  Speaker announcement graphic
 icieee-2026-slide.jpg            Talk title slide
 collide-2026-keyur-vyas-linkedin.jpg Fellow panelist's LinkedIn post
 collide-2026-speaking.jpg        On stage, COLLIDE 2026
 collide-2026-stage.jpg           Panel on stage, with the session screen
-hackathon-2026.jpg               Recognition received 12 October 2026 for first-round judging
-ksu-career-compass-2026.jpg      Certificate of appreciation, featured speaker and judge
-writing-mentoring.svg            Illustration — articles feeding the team's reference practice
 ieee-senior-member.jpg           Certificate of IEEE Membership
 sas-sefm.jpg                     Certificate of Membership
 iete-fellowship.jpg              Certificate of election as Fellow
@@ -62,12 +69,17 @@ icieee-2026-keynote-certificate.jpg Certificate of Appreciation
 consulting-synchrony.jpg         Illustrative graphic — not engagement-specific evidence
 consulting-ups.jpg               Illustrative diagram — not UPS-specific evidence
 consulting-healthcare.jpg        Illustrative diagram — not engagement-specific evidence
+great-lakes-ai-week-2026.jpg     On stage, six-layer agent platform slide
+great-lakes-ai-week-2026-pace.jpg At the podium, PACE slide
+bsides-charleston-2026.jpg       Event banner
+bsides-charleston-2026-room.jpg  Session room at the event
 collide-2026-panel.jpg           Full panel
 collide-2026-panel-wide.jpg      Panel, wide view
 collide-2026.jpg                 Panel announcement graphic
+cis-2026-keynote-card.jpg        Keynote title card
 cis-2026.jpg                     Conference venue, NIT Warangal
-zee-news.png                     Zee News coverage
 authority-magazine-interview.jpg Portrait
+zee-news.png                     Zee News coverage
 finextra-article.png             Screenshot of the Finextra article header
 thep-tan-linkedin.png            Screenshot of Thep Tan's LinkedIn post
 dzone-article.png                Screenshot of the DZone article header
