@@ -2,6 +2,8 @@ Put photos in this folder using exactly these file names. JPG or PNG is fine, bu
 Any photo you don't add is hidden automatically once DRAFT_MODE is false.
 
 portrait.jpg                     Professional headshot, portrait orientation
+ceo-award-email.jpg              Award notification email
+ceo-award-plaque.jpg             Photo of the award plaque
 cais-2026-certificate.jpg        Certificate of appreciation, oral presentation
 cais-2026.jpg                    Conference logo
 ijca-paper.png                   Journal logo
@@ -53,7 +55,7 @@ ksu-career-compass-2026.jpg      Certificate of appreciation, featured speaker a
 adplist-rising-star-2026.jpg     Certificate of Recognition, Rising Star
 adplist-review-1.jpg             Mentor review on ADPList
 adplist-review-2.jpg             Mentor review on ADPList
-writing-mentoring.svg            Illustration — articles feeding the team's reference practice
+writing-insights.jpg             Illustration — themes of the writing used as mentoring material
 icieee-2026.jpg                  Speaker announcement graphic
 icieee-2026-slide.jpg            Talk title slide
 collide-2026-keyur-vyas-linkedin.jpg Fellow panelist's LinkedIn post
@@ -62,9 +64,9 @@ collide-2026-stage.jpg           Panel on stage, with the session screen
 ieee-senior-member.jpg           Certificate of IEEE Membership
 sas-sefm.jpg                     Certificate of Membership
 iete-fellowship.jpg              Certificate of election as Fellow
+scrs-fellow-certificate.jpg      Certificate confirming Fellow of SCRS
+sigma-xi-welcome-letter.jpg      Welcome letter confirming induction
 globee-judge-2026.jpg            Certificate of appreciation, volunteer judge
-ceo-award-plaque.jpg             Photo of the award plaque
-ceo-award-email.jpg              Award notification email
 icieee-2026-keynote-certificate.jpg Certificate of Appreciation
 consulting-synchrony.jpg         Illustrative graphic — not engagement-specific evidence
 consulting-ups.jpg               Illustrative diagram — not UPS-specific evidence
